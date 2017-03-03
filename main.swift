@@ -1,5 +1,7 @@
 import Foundation
 
+import Embassy
+
 let loop = try! SelectorEventLoop(selector: try! SelectSelector())
 let server = DefaultHTTPServer(eventLoop: loop, port: 8080) {
     (
